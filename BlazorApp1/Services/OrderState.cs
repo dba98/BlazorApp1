@@ -7,16 +7,16 @@ public class OrderState
 {
     public bool ShowingConfigureDialog { get; private set; }
     public Pizza ConfiguringPizza { get; private set; }
-    public Order Order { get; private set; } = new Order();
+    public Order Order { get; private set; } = new();
 
     public void ShowConfigurePizzaDialog(PizzaSpecial special)
     {
-        ConfiguringPizza = new Pizza()
+        ConfiguringPizza = new Pizza
         {
             Special = special,
             SpecialId = special.Id,
             Size = Pizza.DefaultSize,
-            Toppings = new List<PizzaTopping>(),
+            Toppings = new List<PizzaTopping>()
         };
 
         ShowingConfigureDialog = true;
@@ -36,10 +36,18 @@ public class OrderState
 
         ShowingConfigureDialog = false;
     }
-    
+
     public void RemoveConfiguredPizza(Pizza pizza)
     {
         Order.Pizzas.Remove(pizza);
     }
+<<<<<<< Updated upstream
     
+=======
+
+    public void ResetOrder()
+    {
+        Order = new Order();
+    }
+>>>>>>> Stashed changes
 }

@@ -1,7 +1,7 @@
 ﻿namespace BlazorApp1.Models;
 
 /// <summary>
-/// Represents a pre-configured template for a pizza a user can order
+///     Represents a pre-configured template for a pizza a user can order
 /// </summary>
 public class PizzaSpecial
 {
@@ -15,5 +15,8 @@ public class PizzaSpecial
 
     public string ImageUrl { get; set; }
 
-    public string GetFormattedBasePrice() => BasePrice.ToString("0.00");
-} 
+    public string GetFormattedBasePrice()
+    {
+        return BasePrice.ToString("0.00");
+    }
+}

@@ -18,8 +18,25 @@ form {
     text-align: right;
 }
 
+<<<<<<< Updated upstream
 h1:focus {
     outline: none;
+=======
+.top-bar {
+    height: 5rem;
+    background-color: rgb(192, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 70%);
+    display: flex;
+    align-items: stretch;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    padding: 0 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+>>>>>>> Stashed changes
 }
 
 a, .btn-link {
@@ -49,19 +66,66 @@ a, .btn-link {
 .main {
     flex-grow: 1;
     overflow-y: auto;
-    background: linear-gradient(rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 80%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 80%);
     padding: 1.5rem !important;
 }
+<<<<<<< Updated upstream
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
+=======
+
+.nav-tab {
+    margin: 0;
+    padding: 0.3rem 1.8rem;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.2s ease-out;
+}
+
+.nav-tab:hover {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-tab.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff2cc;
+}
+
+.nav-tab img {
+    height: 2rem;
+    margin-bottom: 0.25rem;
+>>>>>>> Stashed changes
 }
 
 .invalid {
     outline: 1px solid red;
 }
 
+<<<<<<< Updated upstream
 .validation-message {
     color: red;
+=======
+.nav-tab.active:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1;
+    width: 0px;
+    height: 0px;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
+    border-top: 1rem solid rgb(205, 51, 51);
+>>>>>>> Stashed changes
 }
 
 #blazor-error-ui {
@@ -108,7 +172,7 @@ a, .btn-link {
     background-size: cover;
     border-radius: 0.5rem;
     list-style-type: none;
-    box-shadow: 0 3px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4);
     transition: 0.1s ease-out;
 }
 
@@ -123,11 +187,11 @@ a, .btn-link {
     right: 0;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(rgba(0,0,0,0.7) 30%, rgba(0,0,0,0) 80%);
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 80%);
     padding: 1rem 1rem;
     color: #fff2cc;
     cursor: pointer;
-    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.25rem;
 }
 
@@ -283,7 +347,7 @@ a, .btn-link {
 .delete-item:hover {
     text-decoration: none;
     color: #fff2cc;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .configured-pizza-item {
@@ -297,7 +361,7 @@ a, .btn-link {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2000;
     display: flex;
     animation: dialog-container-entry 0.2s;
@@ -315,7 +379,7 @@ a, .btn-link {
 
 .dialog {
     background-color: white;
-    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     z-index: 2000;
@@ -454,7 +518,7 @@ a, .btn-link {
 
 .track-order {
     background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -511,7 +575,7 @@ a.sign-in {
 }
 
 a.sign-in:hover {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     color: #fff2cc;
     border-color: #fff2cc;
 }
@@ -609,6 +673,7 @@ input[type=range]::-ms-thumb {
 .checkout-cols {
     display: flex;
 }
+
 .checkout-cols h4 {
     margin-bottom: 1.5rem;
 }
@@ -617,7 +682,7 @@ input[type=range]::-ms-thumb {
     flex: 1;
     margin: 1rem;
     border: 1px solid #ddd;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     padding: 1.25rem 1rem;
 }
 
@@ -637,7 +702,7 @@ input[type=range]::-ms-thumb {
     height: 6px;
     background-color: white;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2)
 }
 
 .loading-bar::after {

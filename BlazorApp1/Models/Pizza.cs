@@ -22,7 +22,7 @@ public class Pizza
 
     public decimal GetBasePrice()
     {
-        return ((decimal)Size / (decimal)DefaultSize) * Special.BasePrice;
+        return Size / (decimal)DefaultSize * Special.BasePrice;
     }
 
     public decimal GetTotalPrice()
