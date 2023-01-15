@@ -6,12 +6,8 @@ public class Order
 {
     public int OrderId { get; set; }
 
-<<<<<<< Updated upstream
-        public string UserId { get; set; }
-=======
-    public string UserId { get; set; } = "";
->>>>>>> Stashed changes
-
+    public string UserId { get; set; }
+    
     public DateTime CreatedTime { get; set; }
 
     public Address DeliveryAddress { get; set; } = new();

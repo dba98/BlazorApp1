@@ -1,4 +1,5 @@
-﻿using BlazorApp1.Models;
+﻿using BlazingPizza;
+using BlazorApp1.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlazorApp1.Data;
@@ -10,9 +11,7 @@ public class PizzaStoreContext : DbContext
     }
 
     public DbSet<PizzaSpecial> Specials { get; set; }
-<<<<<<< Updated upstream
-} 
-=======
+
 
     public DbSet<Topping> Toppings { get; set; }
 
@@ -26,4 +25,3 @@ public class PizzaStoreContext : DbContext
         modelBuilder.Entity<PizzaTopping>().HasOne(pst => pst.Topping).WithMany();
     }
 }
->>>>>>> Stashed changes

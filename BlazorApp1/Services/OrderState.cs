@@ -41,13 +41,8 @@ public class OrderState
     {
         Order.Pizzas.Remove(pizza);
     }
-<<<<<<< Updated upstream
-    
-=======
-
     public void ResetOrder()
     {
         Order = new Order();
     }
->>>>>>> Stashed changes
 }
